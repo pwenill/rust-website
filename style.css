@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root {
+    --bebas-neue-ffamily: 'Bebas Neue', sans-serif;
+    --color-white: #e4dad1;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: var(--bebas-neue-ffamily);
+}
+
+body {
+    background-image: url(./src/background-rust.jpg);
+    background-color: #151413;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: transparent;
+}
+
+.section {
+    padding: 50px;
+}
+
+.loading-box {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #151413;
+}
+
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading .rond {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    display: block;
+    animation: infinite test 1.5s;
+}
+
+@keyframes test {
+    0% {
+        height: 40px;
+    }
+    25% {
+        transform: translateX(-50%);
+    }
+    50% {
+        height: 20px;
+    }
+    75% {
+        transform: translateX(50%);
+    }
+    100% {
+        height: 40px;
+    }
+}
+
+.btn-login {
+    background-color: #cd412b;
+    box-shadow: 0 3px 5px rgb(0 0 0 / 0%);
+    border-radius: 0;
+}
+
+.btn-server {
+    width: 100%;
+    background-color: #5d7239;
+    border-radius: 0;
+    color: white!important;
+    font-weight: 500;
+    font-family: var(--bebas-neue-ffamily);
+}
+
+.btn-plus {
+    background-color: #cd412b;
+    width: 100%;
+    border-radius: 0;
+    color: white!important;
+    font-weight: 500;
+    font-family: var(--bebas-neue-ffamily);
+}
+
+.navbar {
+    background-color: #1b1b1b;
+    padding: 6px 30px;
+    margin-top: 30px;
+}
+
+.navbar .navbar-brand {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.navbar .nav-item {
+    margin-right: 1rem;
+    padding: 8px;
+    margin-left: 4px;
+}
+
+.navbar .nav-link {
+    color: var(--color-white);
+    display: flex;
+    font-weight: 500;
+    flex-direction: column;
+    text-decoration: none;
+    text-align: center;
+    transition: color .2s ease;
+}
+
+.background-radius {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, #151413 49%);
+    width: 100%;
+    height: 111%;
+    z-index: -5;
+}
+
+#info .header-info .title {
+    font-size: 5rem;
+    color: var(--color-white);
+    font-family: var(--bs-font-sans-serif);
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+#info .header-info .description {
+    width: 390px;
+    color: #b3b3b3;
+}
+
+.card {
+    background-color: #1f1f1f;
+    color: white;
+    font-family: var(--bebas-neue-ffamily);
+    padding: 25px;
+    z-index: 2;
+    transition: all 2s;
+}
+
+.card-servers {
+    background-color: transparent!important;
+    overflow: hidden;
+    border: none;
+}
+
+.card-servers img {
+    border-radius: 0.3rem;
+}
+
+.card-servers .details {
+    background-color: #1f1f1f;
+    margin: 0 40px;
+    color: white;
+    font-family: var(--bebas-neue-ffamily);
+    padding: 25px;
+    z-index: 2;
+    margin-top: -50px;
+}
+
+.card-servers .details span {
+    display: block;
+    font-size: 2rem;
+}
+
+.card-servers .details span.name {
+    font-size: 16px;
+    opacity: 0.5;
+    padding: 0 30px 0 0;
+}
+
+#jobs {
+    background-color: #1b1b1b;
+}
+
+.section-title {
+    color: var(--color-white);
+}
+
+.card-jobs {
+    background-color: #1f1f1f;
+    margin: 0 40px;
+    color: white;
+    font-family: var(--bebas-neue-ffamily);
+    padding: 25px;
+    z-index: 2;
+    transition: all 2s;
+}
+
+.card-jobs:hover {
+    transform: scale(1.1);
+}
+
+.card-jobs span {
+    display: block;
+    font-size: 2rem;
+}
+
+.card-jobs span.salaire {
+    font-size: 1rem;
+}
+
+.card-jobs .descriptions {
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.card-equipes span {
+    display: block;
+    font-size: 2rem;
+}
+
+.card-equipes span.salaire {
+    font-size: 1rem;
+}
+
+.card-equipes .descriptions {
+    opacity: 0.5;
+    margin-top: 20px;
+    margin-bottom: 0;
+    display: block;
+}
+
+.card-equipes .cdequipe {
+    padding: 25px;
+}
+
+#social a {
+    color: white;
+    text-decoration: none!important;
+    display: block;
+    text-align: center;
+}
+
+#social svg {
+    fill: white;
+    width: 80px;
+    height: 80px;
+}
+
+#social .name {
+    display: block;
+    margin-top: 20px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.section-title {
+    margin-top: 5rem;
+}
